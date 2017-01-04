@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="60dp"
@@ -9,7 +10,8 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
         <ImageView
             android:id="@+id/imSchedule"
             android:layout_width="@dimen/footer_icon_size"
@@ -28,7 +30,8 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
         <ImageView
             android:id="@+id/imGroup"
             android:layout_width="@dimen/footer_icon_size"
@@ -47,7 +50,8 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
         <ImageView
             android:id="@+id/imFind"
             android:layout_width="@dimen/footer_icon_size"
@@ -66,7 +70,8 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
         <ImageView
             android:id="@+id/imUser"
             android:layout_width="@dimen/footer_icon_size"

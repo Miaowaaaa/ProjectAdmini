@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import cn.scrovor.admini.Fragments.FindFragment;
 import cn.scrovor.admini.Fragments.GroupFragment;
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Fragment frgGroup;
     private Fragment frgFind;
     private Fragment frgUser;
+
+    private LinearLayout schedule;
+    private LinearLayout group;
+    private LinearLayout find;
+    private LinearLayout user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,25 +40,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imGroup = (ImageView)findViewById(R.id.imGroup);
         imSchedule = (ImageView)findViewById(R.id.imSchedule);
         imUser = (ImageView)findViewById(R.id.imUser);
+        schedule = (LinearLayout)findViewById(R.id.schedule);
+        group = (LinearLayout)findViewById(R.id.group);
+        find = (LinearLayout)findViewById(R.id.find);
+        user = (LinearLayout)findViewById(R.id.user);
+        schedule.setOnClickListener(this);
+        group.setOnClickListener(this);
+        find.setOnClickListener(this);
+        user.setOnClickListener(this);
+        setSelect(2);
     }
     @Override
     public void onClick(View v) {
         resetImages();
         switch (v.getId()){
             case R.id.find:
-                imFind.setImageResource(R.drawable.around_push);
-                setSelect(0);
+                setSelect(2);
                 break;
             case R.id.group:
-                imGroup.setImageResource(R.drawable.message_push);
                 setSelect(1);
                 break;
             case R.id.schedule:
-                imSchedule.setImageResource(R.drawable.calendar_push);
-                setSelect(2);
+                setSelect(0);
                 break;
             case R.id.user:
-                imUser.setImageResource(R.drawable.user_push);
                 setSelect(3);
                 break;
             default:break;

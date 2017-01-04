@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/def"/>
+            android:text="@string/timetable"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/group"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/def"/>
+            android:text="@string/group"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/find"
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/def"/>
+            android:text="@string/around"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/user"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/def" />
+            android:text="@string/mysetting" />
     </LinearLayout>
 
 

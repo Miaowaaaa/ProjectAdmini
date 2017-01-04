@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Admini</string>
     <string name="def">string</string>
+    <string name="mysetting">我的</string>
+    <string name="timetable">时间表</string>
+    <string name="around">发现</string>
+    <string name="group">群组</string>
 </resources>
